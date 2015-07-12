@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var quiz_Controller = require('../controllers/quiz_Controller');
+var quiz_Controller = require('../controllers/quiz_controller');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -16,5 +16,6 @@ router.get('/quizes/answer', quiz_Controller.answer);
 router.get('/author', function(req, res, next) {
   res.render('author', { autor: 'Miguel P64' });
 });
+
 
 module.exports = router;
